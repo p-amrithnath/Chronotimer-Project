@@ -1,0 +1,12 @@
+.required-field::after {
+    content: " *";
+    color: red;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .table th, .table td {
+    white-space: nowrap;
+  }
