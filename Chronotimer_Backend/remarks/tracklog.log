@@ -1,0 +1,125 @@
+2025-03-07T11:19:03.480+05:30  INFO 5072 --- [remarks] [restartedMain] com.cts.remarks.RemarksApplication       : Starting RemarksApplication using Java 21.0.5 with PID 5072 (C:\Project\Chronotimer\remarks\target\classes started by 2380232 in C:\Project\Chronotimer\remarks)
+2025-03-07T11:19:03.491+05:30  INFO 5072 --- [remarks] [restartedMain] com.cts.remarks.RemarksApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-03-07T11:19:03.597+05:30  INFO 5072 --- [remarks] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:1233
+2025-03-07T11:19:03.597+05:30  INFO 5072 --- [remarks] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=remarks, profiles=[default], label=null, version=f4b0d06ba45c592ffa4e69ba5e63c36cf49f9f5b, state=
+2025-03-07T11:19:03.603+05:30  INFO 5072 --- [remarks] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-07T11:19:03.604+05:30  INFO 5072 --- [remarks] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-07T11:19:06.354+05:30  INFO 5072 --- [remarks] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-07T11:19:06.886+05:30  INFO 5072 --- [remarks] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 502 ms. Found 1 JPA repository interface.
+2025-03-07T11:19:07.712+05:30  INFO 5072 --- [remarks] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=14c2dfe8-cfb1-3a38-8882-ae345be10ec2
+2025-03-07T11:19:09.340+05:30  INFO 5072 --- [remarks] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8088 (http)
+2025-03-07T11:19:09.374+05:30  INFO 5072 --- [remarks] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T11:19:09.375+05:30  INFO 5072 --- [remarks] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-07T11:19:09.562+05:30  INFO 5072 --- [remarks] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-07T11:19:09.564+05:30  INFO 5072 --- [remarks] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5959 ms
+2025-03-07T11:19:09.963+05:30  INFO 5072 --- [remarks] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-07T11:19:10.124+05:30  INFO 5072 --- [remarks] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-03-07T11:19:10.210+05:30  INFO 5072 --- [remarks] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-07T11:19:10.961+05:30  INFO 5072 --- [remarks] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-07T11:19:11.060+05:30  INFO 5072 --- [remarks] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-07T11:19:12.044+05:30  INFO 5072 --- [remarks] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@49101708
+2025-03-07T11:19:12.050+05:30  INFO 5072 --- [remarks] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-07T11:19:12.295+05:30  INFO 5072 --- [remarks] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-07T11:19:14.727+05:30  INFO 5072 --- [remarks] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-07T11:19:14.879+05:30  INFO 5072 --- [remarks] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T11:19:16.061+05:30  WARN 5072 --- [remarks] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-07T11:19:17.952+05:30  INFO 5072 --- [remarks] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-07T11:19:18.231+05:30  INFO 5072 --- [remarks] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-03-07T11:19:18.522+05:30  WARN 5072 --- [remarks] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-03-07T11:19:18.780+05:30  INFO 5072 --- [remarks] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-03-07T11:19:18.842+05:30  INFO 5072 --- [remarks] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-03-07T11:19:18.850+05:30  INFO 5072 --- [remarks] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T11:19:18.871+05:30  INFO 5072 --- [remarks] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-03-07T11:19:18.872+05:30  INFO 5072 --- [remarks] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-03-07T11:19:18.873+05:30  INFO 5072 --- [remarks] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-03-07T11:19:18.873+05:30  INFO 5072 --- [remarks] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-03-07T11:19:18.873+05:30  INFO 5072 --- [remarks] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-03-07T11:19:18.874+05:30  INFO 5072 --- [remarks] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-03-07T11:19:18.874+05:30  INFO 5072 --- [remarks] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-03-07T11:19:19.712+05:30  INFO 5072 --- [remarks] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-03-07T11:19:19.714+05:30  INFO 5072 --- [remarks] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-03-07T11:19:19.717+05:30  INFO 5072 --- [remarks] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-03-07T11:19:19.720+05:30  INFO 5072 --- [remarks] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1741326559719 with initial instances count: 0
+2025-03-07T11:19:19.729+05:30  INFO 5072 --- [remarks] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application REMARKS with eureka with status UP
+2025-03-07T11:19:19.731+05:30  INFO 5072 --- [remarks] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1741326559731, current=UP, previous=STARTING]
+2025-03-07T11:19:19.735+05:30  INFO 5072 --- [remarks] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REMARKS/LTIN564398.cts.com:remarks:8088: registering service...
+2025-03-07T11:19:19.775+05:30  INFO 5072 --- [remarks] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8088 (http) with context path '/'
+2025-03-07T11:19:19.777+05:30  INFO 5072 --- [remarks] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8088
+2025-03-07T11:19:19.798+05:30  INFO 5072 --- [remarks] [restartedMain] com.cts.remarks.RemarksApplication       : Started RemarksApplication in 28.568 seconds (process running for 30.86)
+2025-03-07T11:19:19.980+05:30  INFO 5072 --- [remarks] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_REMARKS/LTIN564398.cts.com:remarks:8088 - registration status: 204
+2025-03-07T11:19:49.722+05:30  INFO 5072 --- [remarks] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-03-07T11:19:49.723+05:30  INFO 5072 --- [remarks] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-03-07T11:19:49.723+05:30  INFO 5072 --- [remarks] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-03-07T11:19:49.723+05:30  INFO 5072 --- [remarks] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-03-07T11:19:49.723+05:30  INFO 5072 --- [remarks] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-03-07T11:19:49.724+05:30  INFO 5072 --- [remarks] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-03-07T11:19:49.724+05:30  INFO 5072 --- [remarks] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-03-07T11:19:49.761+05:30  INFO 5072 --- [remarks] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-03-07T11:24:18.890+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T11:29:18.899+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T11:34:18.900+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T11:51:54.688+05:30  WARN 5072 --- [remarks] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m12s293ms964µs100ns).
+2025-03-07T12:03:52.815+05:30  WARN 5072 --- [remarks] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m58s76ms314µs500ns).
+2025-03-07T12:04:29.259+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T12:08:17.466+05:30  INFO 5072 --- [remarks] [http-nio-8088-exec-1] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x030x010xf40x010x000x010xf00x030x030x0d0x050x050xfc0xa2dW0xc2;0x060x8b0xc1P;0xbe0xf0Y0xb30xafUeP0xf6'0xfb0x98(0xa65 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:406) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-03-07T12:08:17.502+05:30  INFO 5072 --- [remarks] [http-nio-8088-exec-3] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x020x010xc00x010x000x010xbc0x030x020xc00x1f0x90b0xb00xb40x950xb80x120xbc0xbc0xa6D}0x9a0x800xdd0x970xa50xec0x8dG0xe0R0xb1-0xc1H0xbd0xd2k/0x000x01|0x000x000x000x010x000x020x000x030x000x040x000x050x000x060x000x070x000x080x000x090x000x0a0x000x0b0x000x0c0x000x0d0x000x0e0x000x0f0x000x100x000x110x000x120x000x130x000x140x000x150x000x160x000x170x000x180x000x190x000x1a0x000x1b0x00/0x0000x0010x0020x0030x0040x0050x0060x0070x0080x0090x00:0x00;0x00<0x00=0x00>0x00?0x00@0x00A0x00B0x00C0x00D0x00E0x00F0x00g0x00h0x00i0x00j0x00k0x00l0x00m0x000x840x000x850x000x860x000x870x000x880x000x890x000x960x000x970x000x980x000x990x000x9a0x000x9b0x000x9c0x000x9d0x000x9e0x000x9f0x000xa00x000xa10x000xa20x000xa30x000xa40x000xa50x000xa60x000xa70x000xba0x000xbb0x000xbc0x000xbd0x000xbe0x000xbf0x000xc00x000xc10x000xc20x000xc30x000xc40x000xc50x130x010x130x020x130x030x130x040x130x050xc00x010xc00x020xc00x030xc00x040xc00x050xc00x060xc00x070xc00x080xc00x090xc00x0a0xc00x0b0xc00x0c0xc00x0d0xc00x0e0xc00x0f0xc00x100xc00x110xc00x120xc00x130xc00x140xc00x150xc00x160xc00x170xc00x180xc00x190xc0#0xc0$0xc0%0xc0&0xc0'0xc0(0xc0)0xc0*0xc0+0xc0,0xc0-0xc0.0xc0/0xc000xc010xc020xc0r0xc0s0xc0t0xc0u0xc0v0xc0w0xc0x0xc0y0xc0z0xc0{0xc0|0xc0}0xc0~0xc00x7f0xc00x800xc00x810xc00x820xc00x830xc00x840xc00x850xc00x860xc00x870xc00x880xc00x890xc00x8a0xc00x8b0xc00x8c0xc00x8d0xc00x8e0xc00x8f0xc00x900xc00x910xc00x920xc00x930xc00x940xc00x950xc00x960xc00x970xc00x980xc00x990xc00x9a0xc00x9b0xcc0xa80xcc0xa90xcc0xaa0xcc0xab0xcc0xac0xcc0xad0xcc0xae0x020x000x010x000x160x000x0a0x000x0a0x000x080x000x170x000x190x000x180x000x160x000x0b0x000x040x030x000x010x02...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:406) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.34.jar:10.1.34]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-03-07T12:09:26.589+05:30  WARN 5072 --- [remarks] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m3s691ms324µs400ns).
+2025-03-07T12:10:02.942+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T12:15:02.949+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T12:20:02.960+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T12:25:02.962+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T12:30:02.966+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T12:35:02.980+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T12:40:02.983+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T12:45:02.986+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T12:50:02.998+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T12:50:44.714+05:30  INFO 5072 --- [remarks] [http-nio-8088-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-07T12:50:44.721+05:30  INFO 5072 --- [remarks] [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-07T12:50:44.788+05:30  INFO 5072 --- [remarks] [http-nio-8088-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 63 ms
+2025-03-07T12:55:03.028+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T13:00:03.032+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T13:04:19.312+05:30  WARN 5072 --- [remarks] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s527ms155µs700ns).
+2025-03-07T13:05:54.548+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T13:50:07.297+05:30  WARN 5072 --- [remarks] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=41m47s922ms746µs300ns).
+2025-03-07T13:52:12.478+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T13:55:19.821+05:30  WARN 5072 --- [remarks] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m12s474ms99µs).
+2025-03-07T13:58:54.950+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T14:03:54.952+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T14:08:54.957+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T14:13:54.959+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-03-07T14:18:54.961+05:30  INFO 5072 --- [remarks] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

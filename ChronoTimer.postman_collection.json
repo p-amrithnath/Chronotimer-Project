@@ -1,0 +1,935 @@
+{
+	"info": {
+		"_postman_id": "e2b176d8-84cc-4099-bb84-8347e430b9ba",
+		"name": "ChronoTimer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41464814"
+	},
+	"item": [
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "Get all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IlVTRVIiLCJzdWIiOiJBeXNoYSIsImlhdCI6MTc0MDkyNjMwOSwiZXhwIjoxNzQwOTI5OTA5fQ._ZOe-102-GXOLoILjqkkKAh9Olqu6OVZbBIL9atD0Xg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1238/projects/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"projects",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1238/projects/getById/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"projects",
+								"getById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IlVTRVIiLCJzdWIiOiJBa2FzaCIsImlhdCI6MTc0MDY1MjMyNywiZXhwIjoxNzQwNjU1OTI3fQ.mohTeGg7z_4nK2cAr4L2dlaLx3f2ooiknTvozFn6XSs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"projName\": \"New Project3\",\r\n    \"type\": \"Development\",\r\n    \"startDate\": \"2025-02-01\",\r\n    \"closeDate\": \"2025-12-31\",\r\n    \"tam\": \"John\",\r\n    \"estimatedhrs\": 1000,\r\n    \"description\": \"This is a new development project.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1238/projects/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"projects",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1238/projects/delete/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"projects",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit project",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1238/projects/edit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"projects",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Timesheets",
+			"item": [
+				{
+					"name": "fetch Detailed timesheet",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IlVTRVIiLCJzdWIiOiJBa2FzaCIsImlhdCI6MTc0MDczNTYzMCwiZXhwIjoxNzQwNzM5MjMwfQ.Sl41AT-rRmgrlbDhCxvIQpyfsxi5xWzyaAoATgdkLFY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1238/timeentry/fetch/19/2025-02-28",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"timeentry",
+								"fetch",
+								"19",
+								"2025-02-28"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add timeentry",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IlVTRVIiLCJzdWIiOiJKb2huIERvZSIsImlhdCI6MTczOTQ1MDE4MCwiZXhwIjoxNzM5NDUzNzgwfQ.qTUEAkhqmnqlfvVcZ8WJ_zuv8bXeyojAAMZKw3lg4Fs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 21,\r\n    \"projectId\": 67890,\r\n    \"category\": \"Development\",\r\n    \"taskDescription\": \"Implementing new feature\",\r\n    \"date\": \"2025-02-28\",\r\n    \"startTime\": \"2025-01-27T04:00:00\",\r\n    \"endTime\": \"2025-01-27T05:00:00\",\r\n    \"status\": \"PENDING\",\r\n    \"submit\": false,\r\n    \"hours\": 8.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/timeentry/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"timeentry",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit timeentry",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"employeeId\": 19,\r\n    \"projectId\": 67890,\r\n    \"category\": \"hr\",\r\n    \"taskDescription\": \"Implementing new feature\",\r\n    \"date\": \"2025-01-27\",\r\n    \"startTime\": \"2025-01-27T01:00:00\",\r\n    \"endTime\": \"2025-01-27T02:00:00\",\r\n    \"status\": \"APPROVED\",\r\n    \"submit\": false,\r\n    \"hours\": 8.0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/timeentry/18",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"timeentry",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove timeentry",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8084/timesheet/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"timesheet",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Submit timesheet",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IlVTRVIiLCJzdWIiOiJBa2FzaCIsImlhdCI6MTc0MDcyNTMxNSwiZXhwIjoxNzQwNzI4OTE1fQ.pardBKfwjCjxJPqBf9NQWwKEqTI12Yz91srQ03HTbr4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\":\"2025-01-27\",\r\n    \"employeeId\":\"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1238/timesheets/submit/21/2025-02-28",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"timesheets",
+								"submit",
+								"21",
+								"2025-02-28"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "approve-reject",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"timeentryIds\": [7],\r\n    \"status\": \"approved\",\r\n    \"timesheetId\": 3,\r\n    \"message\": \"This is a test remark.\",\r\n    \"createdAt\": \"2025-02-05T12:00:00\",\r\n    \"createdBy\": \"19\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8084/timeentry/approve-reject",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8084",
+							"path": [
+								"timeentry",
+								"approve-reject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Monthly sheet",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IlVTRVIiLCJzdWIiOiJBbXJpdGgiLCJpYXQiOjE3NDA5MjUwOTAsImV4cCI6MTc0MDkyODY5MH0.ctj804Y8KRxvIuR9o9CwfWFhO2kG8ypo0NPPxsQMy38",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1238/timesheets/monthly/01/2024/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"timesheets",
+								"monthly",
+								"01",
+								"2024",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete all related entries",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IlVTRVIiLCJzdWIiOiJBeXNoYSIsImlhdCI6MTc0MTE1NDEyMCwiZXhwIjoxNzQxMTU3NzIwfQ.xJR6j2tnDR80BAdOPfdAX_ixQ_x4DcLHQgJ5FDZDo3w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1238/timesheets/all/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"timesheets",
+								"all",
+								"21"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Admin\",\r\n  \"email\": \"admin@example.com\",\r\n  \"password\": \"password\",\r\n  \"roles\": \"ADMIN\",\r\n  \"empDesg\": \"Developer\",\r\n  \"salary\": 50000,\r\n  \"doj\": \"2023-01-01\",\r\n  \"departmentName\": \"IT\",\r\n  \"empType\": \"Full-Time\",\r\n  \"yearsOfExperience\": 2.5,\r\n  \"skillset\": [\"Java\", \"Spring Boot\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1238/auth/new",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"auth",
+								"new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Welcome msg",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"email\": \"john.doe@example.com\",\r\n    \"password\": \"password\",\r\n    \"roles\": \"USER\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1238/auth/welcome",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"auth",
+								"welcome"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"John Doe\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1238/auth/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"auth",
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Role fetch",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1238/auth/getroles/Admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"auth",
+								"getroles",
+								"Admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9194/auth",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9194",
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get employee by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9194/auth/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9194",
+							"path": [
+								"auth",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete employee",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1238/auth/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"auth",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update employee",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Akash\",\r\n  \"email\": \"john.doe@example.com\",\r\n  \"password\": \"password123\",\r\n  \"roles\": \"USER\",\r\n  \"empDesg\": \"Senior Developer\",\r\n  \"salary\": 60000,\r\n  \"doj\": \"2023-01-01\",\r\n  \"departmentName\": \"IT\",\r\n  \"empType\": \"Full-Time\",\r\n  \"yearsOfExperience\": 3.5,\r\n  \"skillset\": [\"Java\", \"Spring Boot\", \"Microservices\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1238/auth/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"auth",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Teams",
+			"item": [
+				{
+					"name": "add teammember",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"empId\": \"E1234\",\r\n    \"name\": \"John Doe\",\r\n    \"email\": \"pamrithnath2002@gmail.com\",\r\n    \"empDesg\": \"Developer\",\r\n    \"role\": \"EMPLOYEE\",\r\n    \"salary\": 75000,\r\n    \"doj\": \"2023-01-15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fetch all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IlVTRVIiLCJzdWIiOiJKb2huIERvZSIsImlhdCI6MTczOTQ1MDI3MCwiZXhwIjoxNzM5NDUzODcwfQ.o5qhni_dE3so7KZqGPJc_2h1g4mujHCNm-fAd5VSSlo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1238/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fetch by Id",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Edit details",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1238/employees/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"employees",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1238/employees/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"employees",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Remarks",
+			"item": [
+				{
+					"name": "Add remark",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IlVTRVIiLCJzdWIiOiJBeXNoYSIsImlhdCI6MTc0MTE0OTg3NywiZXhwIjoxNzQxMTUzNDc3fQ.OXu53Mjw5W5FhRxoblt2FPoGKyp85gU4mYwFN9AS5dE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"timesheetId\": 1,\r\n    \"message\": \"ssss\",\r\n    \"createdAt\": \"2025-02-05T12:00:00\",\r\n    \"createdBy\": \"user1\",\r\n    \"employeeId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8088/remarks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"remarks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fetch remark by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8088/remarks/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"remarks",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete remarks",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8088/remarks/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"remarks",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit remark",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"message\": \"This is an updated test remark.\",\r\n    \"updatedAt\": \"2025-02-05T13:00:00\",\r\n    \"updatedBy\": \"user2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8088/remarks/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"remarks",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fetch all by timesheetId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6IlVTRVIiLCJzdWIiOiJKb2huIERvZSIsImlhdCI6MTczOTQ1MDI3MCwiZXhwIjoxNzM5NDUzODcwfQ.o5qhni_dE3so7KZqGPJc_2h1g4mujHCNm-fAd5VSSlo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1238/remarks/byTimesheetId/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1238",
+							"path": [
+								"remarks",
+								"byTimesheetId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete employee",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8088/remarks/all/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"remarks",
+								"all",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
