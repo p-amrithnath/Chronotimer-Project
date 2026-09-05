@@ -1,0 +1,419 @@
+For your FinTrack Expense Splitting Feature SBA/OJT project, here's a complete end-to-end summary you can use in documentation, interview explanations, README, and project presentation.
+
+FinTrack Expense Splitting Feature
+Project Overview
+
+FinTrack is a collaborative expense management application that enables users to:
+
+Create groups
+Add members
+Record shared expenses
+Split expenses among participants
+Track balances
+View settlement history
+Monitor spending patterns
+
+The goal is to simplify expense sharing among friends, roommates, families, and teams.
+
+Business Problem
+
+Managing shared expenses manually can lead to:
+
+Calculation errors
+Payment disputes
+Lack of transparency
+Difficulty tracking balances
+
+FinTrack automates expense calculation and balance management.
+
+Core Features
+1. User Management
+Features
+User Registration
+User Login
+JWT Authentication
+Profile Management
+APIs
+POST /api/auth/register
+POST /api/auth/login
+GET  /api/users/profile
+
+2. Group Management
+Features
+Create Group
+Update Group
+Delete Group
+Add Members
+Remove Members
+APIs
+POST   /api/groups
+GET    /api/groups
+PUT    /api/groups/{id}
+DELETE /api/groups/{id}
+
+3. Expense Management
+Features
+Add Expense
+Edit Expense
+Delete Expense
+Upload Receipt
+Categorization
+APIs
+POST   /api/expenses
+GET    /api/expenses
+PUT    /api/expenses/{id}
+DELETE /api/expenses/{id}
+
+4. Expense Splitting
+Equal Split
+
+Example:
+
+Amount = ₹300
+
+Users:
+A
+B
+C
+
+Each Pays:
+₹100
+
+Custom Split
+A = ₹150
+B = ₹100
+C = ₹50
+
+Percentage Split
+Amount = ₹1000
+
+A = 50%
+B = 30%
+C = 20%
+
+5. Balance Tracking
+Features
+Who owes whom
+Total payable amount
+Settlement summary
+
+Example:
+
+Rahul owes Akash ₹200
+
+Kiran owes Akash ₹300
+
+6. Settlement Module
+Features
+Mark as Paid
+Settle Transactions
+History Tracking
+7. Dashboard
+Features
+Total Expenses
+Group Summary
+Monthly Spending
+Recent Transactions
+Backend Tech Stack
+Framework
+Spring Boot
+
+Dependencies
+Spring Web
+Spring Data JPA
+Spring Security
+Validation
+Lombok
+JWT
+
+Database
+MySQL
+
+
+Tables:
+
+users
+groups
+group_members
+expenses
+expense_splits
+settlements
+
+Entity Structure
+User
+User
+- id
+- name
+- email
+- password
+
+Group
+Group
+- id
+- groupName
+- createdBy
+
+Expense
+Expense
+- id
+- amount
+- description
+- category
+- paidBy
+- createdAt
+
+ExpenseSplit
+ExpenseSplit
+- id
+- expenseId
+- userId
+- amount
+
+Security
+Authentication
+JWT Token Authentication
+
+
+Flow:
+
+Login
+↓
+Generate JWT
+↓
+Frontend Stores Token
+↓
+Every Request Sends Token
+↓
+Backend Validates
+
+React Frontend
+Tech Stack
+React
+React Router
+Axios
+Material UI
+Bootstrap
+
+React Folder Structure
+src
+│
+├── components
+│   ├── Navbar.jsx
+│   ├── ExpenseForm.jsx
+│   ├── ExpenseList.jsx
+│   └── GroupForm.jsx
+│
+├── pages
+│   ├── Login.jsx
+│   ├── Dashboard.jsx
+│   ├── Groups.jsx
+│   ├── Expenses.jsx
+│
+├── services
+│   └── api.js
+│
+├── context
+│   └── AuthContext.jsx
+│
+└── App.jsx
+
+React Screens
+Login Page
+
+Features:
+
+Email
+Password
+Login
+Dashboard
+
+Cards:
+
+Total Groups
+Total Expenses
+Pending Balance
+Recent Activity
+
+Group Screen
+
+Features:
+
+Create Group
+Add Members
+Delete Group
+
+Expense Screen
+
+Features:
+
+Add Expense
+
+Amount
+Description
+Category
+
+Split Type:
+- Equal
+- Custom
+- Percentage
+
+Settlement Screen
+
+Features:
+
+Pay Balance
+Mark As Settled
+View History
+
+Architecture
+React Frontend
+       │
+       ▼
+ REST APIs
+       │
+       ▼
+ Spring Boot Backend
+       │
+       ▼
+      JPA
+       │
+       ▼
+     MySQL
+
+Non Functional Requirements
+Security
+JWT Authentication
+Password Encryption
+
+Performance
+Pagination
+Indexed Queries
+
+Scalability
+Layered Architecture
+Microservice Ready
+
+Maintainability
+Controller
+Service
+Repository
+DTO
+
+Future Enhancements
+AI Spending Insights
+Analyze spending habits
+
+OCR Receipt Scanner
+Upload receipt
+Auto create expense
+
+UPI Integration
+Google Pay
+PhonePe
+Paytm
+
+Notifications
+Email Alerts
+Settlement Reminders
+
+Resume / SBA One-Line Description
+
+Developed FinTrack Expense Splitting Feature using React, Spring Boot, MySQL, and JWT Authentication to enable collaborative expense management, group-based expense splitting, balance tracking, and settlement processing.
+
+
+
+# FINTRACK SBA MASTER GUIDE
+
+## AI-Assisted Developer Practitioner Level
+
+### Project: FinTrack Expense Splitting Feature
+
+This guide contains:
+- Project structure
+- README guidance
+- CLAUDE.md standards
+- REVIEW.md findings
+- Expense Splitting design
+- Test cases
+- PROMPTS.md content
+- PR_DESCRIPTION.md content
+- TOOL_STRATEGY.md content
+- ARCHITECTURE.md content
+- Screenshot checklist
+
+## Recommended Stack
+- Java 21
+- Spring Boot 3
+- Spring Data JPA
+- H2 Database
+- JUnit 5
+- Mockito
+- Maven
+
+## Required Deliverables
+- README.md
+- CLAUDE.md
+- REVIEW.md
+- PROMPTS.md
+- PR_DESCRIPTION.md
+- TOOL_STRATEGY.md
+- ARCHITECTURE.md
+- Transaction Module
+- Expense Splitting Module
+- Unit Tests
+
+## Core Project Structure
+fintrack-api/
+├── README.md
+├── CLAUDE.md
+├── REVIEW.md
+├── PROMPTS.md
+├── PR_DESCRIPTION.md
+├── TOOL_STRATEGY.md
+├── ARCHITECTURE.md
+├── src/
+└── tests/
+
+## Mandatory Transaction Generation Prompt
+Generate a Transaction model and a Transaction service with create, get-by-user, and delete-all functions. Use a database.
+
+## Review Issues
+1. Missing validation
+2. Missing authorization
+3. Open delete-all endpoint
+4. No logging
+5. No exception handling
+6. Poor layering
+7. Missing audit trail
+8. User data exposure risk
+
+## Required Test Cases
+1. Equal split among 3 participants
+2. Valid custom split
+3. Invalid custom split
+4. Net balance calculation
+5. Single participant rejection
+6. Unauthorized access
+
+## Commit History
+feat: add project standards and CLAUDE configuration
+refactor: remediate transaction module architecture
+feat: implement expense splitting feature
+test: add unit tests and documentation
+
+## Architecture
+Controller -> Service -> Repository -> Model
+
+Transaction module manages financial records.
+Expense module manages shared expenses and balances.
+
+## Screenshot Checklist
+- Project initialization
+- CLAUDE.md
+- Prompt entered
+- Generated transaction files
+- Review process
+- Remediated code
+- Expense module
+- Tests
+- Test execution
